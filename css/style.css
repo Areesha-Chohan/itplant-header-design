@@ -1,0 +1,125 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Acme', sans-serif;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)) ,  url("../image/bj.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo{
+    width: 20%;
+    text-align: center;
+    
+
+}
+nav .menu{
+    width: 50%;
+    justify-content: space-around;
+    display: flex;
+}
+nav .menu a{
+    width: 20%;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+nav .menu a:hover{
+    background-color: purple;
+    color: aliceblue;
+}
+nav a:first-child{
+    color:rgb(196, 91, 164);
+}
+menu{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+section h3{
+    font-size: 30px;
+    font-weight: 640;
+    letter-spacing: 3px;
+    text-shadow: 3px 2px 1px black;
+}
+
+section h1{
+    margin: 30px 0 20px 0;
+    font-size: 49px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-shadow: 3px 2px 1px black;
+}
+
+section p{
+    font-size: 22px;
+    font-weight: 550;
+    letter-spacing: 3px;
+    text-shadow: 3px 2px 1px black;
+    margin-bottom: 40px;
+}
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin: 10px;
+    transition: all .5s ease;
+}
+section .btn1{
+    background-color: salmon;
+    color: seashell;
+    border-radius: 5px;
+}
+
+section .btn1:hover{
+    background-color: rgb(152, 108, 192);
+    color: black;
+}
+
+section .btn2:hover{
+    background-color: yellowgreen;
+    color: black;
+}
+
+section .btn2{
+    background-color: blue;
+    color: seashell;
+    border-radius: 5px;
+}
+.change-content:after{
+    content: "";
+    animation: changetext 10s infinite linear;
+    color: rgb(196, 91, 164);
+}
+@keyframes changetext{
+    0% {content: "WEB DEVELOPMENT";}
+    20% {content: "SOFTWARE DEVELOPMENT";}
+    40% {content: "PROGRAM DEVELOPMENT";}
+    60% {content: "APP DEVELOPMENT";}
+    80% {content: "GRAPHIC DESIGNING";}
+    100% {content: "CONTENT WRITING";}
+}
